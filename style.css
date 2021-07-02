@@ -1,0 +1,78 @@
+body {
+  color: white;
+  background-color: coral;
+  font-family: Poiret One;
+  animation-duration: 5s;
+  animation-name: bami;
+}
+
+@keyframes bami {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 25;
+  }
+
+  50% {
+    opacity: 50;
+  }
+
+  75% {
+    opacity: 75;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+span {
+  font-size: 40px;
+}
+
+#webcam_dis {
+  border: 10px double rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: none;
+  width: 420px !important;
+  height: 320px !important;
+}
+
+#webcamera {
+  width: 420px;
+  cursor: none;
+  border-radius: 10px;
+  border: 10px double rgb(255, 255, 255);
+}
+
+.heading {
+  font-size: 50px;
+  margin: 0px;
+  background-color: #00bfe6;
+  padding-bottom: 10px;
+}
+
+.a {
+  font-size: 30px;
+}
+
+.b {
+  width: 40%;
+  font-size: 20px;
+  transition: width 0.1s; 
+}
+
+.b:hover {
+  width: 60%;
+}
+#pre_hg_1,
+#pre_hg_2{
+  font-size: 50px;
+}
+
+#pre_hg_1t,
+#pre_hg_2t{
+  font-size: 20px;
+}

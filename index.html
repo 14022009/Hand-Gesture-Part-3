@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hand Gestures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <div class="heading">
+      <p>Hand Gestures
+      </p>
+      <h1>Take A Selfie To Know About It's Meaning</h1>
+    </div>
+    <p style="font-size: 30px;">On The Following Gestures The Website Is Made :
+      <br>
+      <span>👍🏼 |</span>
+      <span>👎🏼 |</span>
+      <span>👌🏼 |</span>
+      <span>✌🏼 </span>
+    </p>
+    <br>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <h3>Webcam View </h3>
+      <div id="webcam_dis"></div>
+      <br>
+      <button onclick="take_pic()" class="btn btn-primary b">Capture Image</button>
+    </div>
+    <div class="col-md-4 col-sm-10 col-xs-12">
+      <h2>Predictions</h2>
+      <h2 class="a">Prediction 1</h2>
+      <p id="pre_hg_1"></p>
+      <p id="pre_hg_1t"></p>
+      <br>
+      <h2 class="a">Prediction 2</h2>
+      <p id="pre_hg_2"></p>
+      <p id="pre_hg_2t"></p>
+    </div>
+    <div class="col-md-4 col-sm-10 col-xs-12">
+      <h3>Snapshot </h3>
+      <div id="webcam_dis_s"></div>
+      <br>
+      <button onclick="pre_pic()" class="btn btn-primary b">Predict Image</button>
+      <br><br>
+
+    </div>
+
+  </center>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
